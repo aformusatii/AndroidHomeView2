@@ -16,8 +16,10 @@ public class WebViewJsObject {
     }
 
     @JavascriptInterface
-    public void clearCache() {
+    public String clearCache() {
         webView.clearCache(true);
+
+        return "true";
     }
 
 }
